@@ -1,0 +1,19 @@
+[
+  {"question": "Quel est le montant de mon loyer ?", "expected_sources": ["bail_logement.md"], "expected_keywords": ["1 450"]},
+  {"question": "Jusqu'à quand mon bail est-il valide ?", "expected_sources": ["bail_logement.md"], "expected_keywords": ["30 juin 2027"]},
+  {"question": "Est-ce que j'ai le droit d'avoir un chat dans mon appartement ?", "expected_sources": ["bail_logement.md"], "expected_keywords": ["autorisé"]},
+  {"question": "Quand dois-je avertir mon propriétaire si je veux déménager à la fin du bail ?", "expected_sources": ["bail_logement.md"], "expected_keywords": ["31 mars 2027"]},
+  {"question": "Quelle est la franchise de mon assurance habitation ?", "expected_sources": ["assurance_habitation.md"], "expected_keywords": ["1 000 $"]},
+  {"question": "Suis-je couvert si on me vole mon vélo en ville ?", "expected_sources": ["assurance_habitation.md"], "expected_keywords": ["1 500 $"]},
+  {"question": "Mon assurance couvre-t-elle un refoulement d'égout ?", "expected_sources": ["assurance_habitation.md"], "expected_keywords": ["25 000 $"]},
+  {"question": "Combien me coûte l'itinérance aux États-Unis ?", "expected_sources": ["forfait_mobile.md"], "expected_keywords": ["12 $"]},
+  {"question": "Que se passe-t-il si j'annule mon forfait cellulaire avant la fin du financement du téléphone ?", "expected_sources": ["forfait_mobile.md"], "expected_keywords": ["solde"]},
+  {"question": "Combien de temps le moteur de mon lave-vaisselle est-il garanti ?", "expected_sources": ["garantie_lave_vaisselle.md"], "expected_keywords": ["5 ans"]},
+  {"question": "Quel est le taux d'intérêt sur les achats avec ma carte de crédit ?", "expected_sources": ["carte_credit_conditions.md"], "expected_keywords": ["20,99"]},
+  {"question": "Combien de jours ai-je pour payer ma carte sans intérêts ?", "expected_sources": ["carte_credit_conditions.md"], "expected_keywords": ["21 jours"]},
+  {"question": "Quel préavis dois-je donner pour annuler mon abonnement au gym ?", "expected_sources": ["abonnement_gym.pdf"], "expected_keywords": ["30 jours"]},
+  {"question": "Puis-je suspendre mon abonnement au gym pendant un voyage ?", "expected_sources": ["abonnement_gym.pdf"], "expected_keywords": ["3 mois"]},
+  {"question": "Combien coûte mon assurance auto ?", "answerable": false},
+  {"question": "Quel est le solde de mon compte bancaire ?", "answerable": false},
+  {"question": "Quelle est la date de mon prochain rendez-vous chez le dentiste ?", "answerable": false}
+]

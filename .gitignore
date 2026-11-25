@@ -1,0 +1,42 @@
+# Secrets et configuration locale
+.env
+.env.*
+!.env.example
+
+# Environnements Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Base vectorielle générée et résultats locaux
+chroma_db/
+*.sqlite3
+eval/results/
+
+# Données locales : vos vrais documents ne doivent jamais être publiés
+data/*
+!data/docs/
+data/docs/*
+!data/docs/abonnement_gym.pdf
+!data/docs/assurance_habitation.md
+!data/docs/bail_logement.md
+!data/docs/carte_credit_conditions.md
+!data/docs/forfait_mobile.md
+!data/docs/garantie_lave_vaisselle.md
+
+# Notes personnelles et outils
+CLAUDE.md
+.claude/
+.DS_Store
+.idea/
+.vscode/

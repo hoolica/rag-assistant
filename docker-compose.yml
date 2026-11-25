@@ -1,0 +1,30 @@
+# Par défaut, l'API utilise l'Ollama installé sur la machine hôte (rapide sur Mac : accélération GPU Metal).
+#   docker compose up --build
+# Pour tout faire tourner dans Docker (CPU seulement sur Mac, plus lent) :
+#   OLLAMA_BASE_URL=http://ollama:11434 docker compose --profile ollama up --build
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      LLM_MODEL: ${LLM_MODEL:-llama3.2}
+      EMBED_MODEL: ${EMBED_MODEL:-nomic-embed-text}
+      CHROMA_DIR: /app/chroma_db
+    volumes:
+      - chroma:/app/chroma_db
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  ollama:
+    image: ollama/ollama:latest
+    profiles: ["ollama"]
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+
+volumes:
+  chroma:
+  ollama:
